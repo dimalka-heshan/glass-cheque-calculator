@@ -1,0 +1,114 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #e3f2fd, #ffffff);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  margin-top: 40px;
+  padding: 30px 25px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  text-align: center;
+  color: #0d47a1;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+}
+
+.input-group {
+  margin-bottom: 18px;
+}
+
+label {
+  font-weight: 600;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border 0.2s;
+}
+
+input:focus {
+  border-color: #1976d2;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #1976d2;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #0d47a1;
+}
+
+/* Popup styles */
+.popup {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  backdrop-filter: blur(3px);
+}
+
+.popup-content {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 25px 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 300px;
+  text-align: center;
+  color: #0d47a1;
+  font-weight: 500;
+}
+
+.popup-content h2 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+.popup-content .close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
